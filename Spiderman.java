@@ -13,6 +13,8 @@ public class Spiderman extends Actor
         
         if(isTouching(Hero.class))
         {
+            End end = new End();
+            getWorld().addObject(end, 300,200);
             getWorld().removeObject(this);
         }
     
